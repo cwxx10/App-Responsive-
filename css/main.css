@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box; /* padding nao altera tamanho do elemento, mais responsividade*/
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* */
+
+.cabeçalho {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+
+}
+
+.logo{
+    width: 56px;
+    height: 56px;
+    float: left;
+    font-size: 0;
+} 
+
+/* MENU */
+
+.btn-close {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+}
+   
+.btn-menu {
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: black;
+    border-radius: 50%;
+    background-color: #b94851;
+    cursor: pointer;
+   
+}
+
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../img/bg.jpg);
+    left: 0;
+}
+
+.menu ul {
+    width: 100%;
+    text-align: center;
+    float: right;
+}
+
+.menu li {
+    padding: 2%;
+}
+
+.menu li a {
+    font-size: 2em;
+    padding: 2%;
+    color: white;
+}
+
+.menu li a:hover{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    background: url(../img/bg.jpg);
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.banner-h2{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700; /* deixar mais negrito*/
+}
+
+.banner-h3{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.buttons {
+    width: 100%;
+}
+
+
+.buttons-1  {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    /* background: transparent; */
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ff1414;
+    color: white;
+    font-weight: 1000;
+    
+   }
+   
+   button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0  #9430d6;
+   }
+   
+   button:active {
+    transform: scale(0.9);
+   }
+
+/* main e article */
+   .main-servicos {
+       width: 100%;
+      
+
+   }
+
+   .article-servico {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 3%;
+   }
+
+   .article-inner-criacoes {
+    
+    padding: 3%;
+    margin-right: 0;
+    background: linear-gradient(0.25turn, #fff5f5,  #bebebe); 
+    margin: 0;
+    
+   }
+
+   .h-medium {
+       font-size: 2rem;
+       text-align: center;
+       color: #130400;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: 700;
+       letter-spacing: 4px;
+   }
+
+   .p-p {
+       margin-top: 5%;
+       font-size: 1rem;
+       text-align: justify;
+       letter-spacing: 2px;
+       
+   }
+
+   .news {
+       width: 100%;
+       text-align: center;
+       padding: 3% 4%;
+       background: url(../img/bg.jpg);
+
+   }
+
+   .p-p-1 {
+    
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+.p-medium{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+}
+
+input {
+    border: 20px solid white;
+}
+
+.btn-ok {
+    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    /* background: transparent; */
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ff1414;
+    color: white;
+    font-weight: 1000;
+}
+
+.div-footer {
+    width: 100%;
+    background-color: #bebebe;
+    text-align: center;
+    padding: 1%;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width: 680px) {
+    .logo{
+        width: 170px;
+        height: 170px;
+        float: center;
+        font-size: 0;
+    } 
+
+    .btn-menu {
+        width: 120px;
+        height: 120px;
+        margin-top: 2%;
+        margin-right: 2%;
+        text-align: center;
+        color: black;
+        border-radius: 50%;
+        background-color: #b94851;
+        cursor: pointer;
+       
+    }
+
+    #img-querie {
+        width: 100%;
+    }
+
+}
+
+
+
+
